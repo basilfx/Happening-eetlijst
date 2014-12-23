@@ -1,0 +1,5 @@
+name: Eetlijst.nl
+icon: food
+description: A Happening plugin for Eetlijst.nl.
+api: 2
+store: 500

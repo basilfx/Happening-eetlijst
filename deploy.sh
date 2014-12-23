@@ -13,7 +13,7 @@ if hash zip 2>/dev/null; then
         f=tmp-upload.zip
         rm -f $f
         zip -qr $f *
-        wget --post-file=$f "https://happening.im/plugin/$1" -O - -q
+        wget --content-on-error --post-file=$f "https://happening.im/plugin/$1" -O - -q
         rm -f $f
     else
         echo "This script requires either 'curl' or 'wget' in your path. Hint: apt-get install curl" >&2
